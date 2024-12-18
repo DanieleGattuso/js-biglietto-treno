@@ -15,10 +15,10 @@ let ticketPrice = kmUser * 0.21;
 
 if (ageUser < 18) {
     let priceUnder = parseFloat((ticketPrice * 0.8).toFixed(2)); // Applica lo sconto del 20%
-    console.log("Il passegero ha diritto ad uno sconto del 20%:", parseFloat((ticketPrice * 0.8).toFixed(2)));
+    console.log("Il passegero ha diritto ad uno sconto del 20% :", priceUnder);
 } else if (ageUser >64) {
-    let priceUnder = parseFloat((ticketPrice * 0.6).toFixed(2)); // Applica lo sconto del 40%
-    console.log("Il passegero ha diritto ad uno sconto del 40%:" ,parseFloat((ticketPrice * 0.6).toFixed(2)));
+    let priceOver = parseFloat((ticketPrice * 0.6).toFixed(2)); // Applica lo sconto del 40%
+    console.log("Il passegero ha diritto ad uno sconto del 40% :", priceOver);
 } else{ 
     console.log("Prezzo pieno:", ticketPrice)
     
