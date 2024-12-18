@@ -16,14 +16,11 @@ let ticketPrice = kmUser * 0.21;
 if (ageUser < 18) {
     let priceUnder = parseFloat((ticketPrice * 0.8).toFixed(2)); // Applica lo sconto del 20%
     console.log(`Prezzo scontato: €${priceUnder}`);
-} else{
-    // console.log(`Questo sarebbe stato il prezzo pieno: €${ticketPrice}`);
-}
-
-// Controllo se il cliente è over 65 e applicare lo sconto
-if (ageUser >64) {
+} else if (ageUser >64) {
     let priceUnder = parseFloat((ticketPrice * 0.6).toFixed(2)); // Applica lo sconto del 40%
     console.log(`Prezzo scontato: €${priceUnder}`);
 } else{ 
     console.log(`Prezzo pieno: €${ticketPrice}`);
+    // console.log(`Questo sarebbe stato il prezzo pieno: €${ticketPrice}`);
 }
+
